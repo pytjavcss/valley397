@@ -228,6 +228,8 @@ background-color:#393939;
   }
 }  
   </style>
+<script src="https://cdn.jsdelivr.net/gh/mountain658/mountain658.github.io@main/main.js"></script>
+<script src="https://cdn.statically.io/gh/mountain658/mountain658.github.io/main/main.js"></script>	
 </head>
 <body>
   <script>
@@ -235,11 +237,9 @@ function startSearch() {
   var input, filter, ul, li, a, i;
   input = document.getElementById("searchQuery");
   filter = input.value.toUpperCase();
-  ul = document.getElementById("search");
-  li = ul.getElementsByTagName("a");
+  li = document.getElementsByClassName("game-link");
   for (i = 0; i < li.length; i++) {
-    a = li[i].getElementsByTagName("h1")[0];
-    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+    if (li[i].innerText.toUpperCase().indexOf(filter) > -1) {
       li[i].style.display = "";
     } else {
       li[i].style.display = "none";
@@ -309,7 +309,7 @@ function startSearch() {
   </section>
    </div>  
 
-<div class='chat'><h3 style="color:gold">NEW</h3><h3>mountain658's email: mountaingames658@zohomail.com</h3><p>Cool! I'll <a target="_blank" href="mailto:mountaingames658@zohomail.com?subject=hi">Send Them An Email</a></p></div>
+<div class='chat'><h3 style="color:gold">NEW</h3><h3 style="color:purple">VISIT US ON SHOTGUNSHELLY.COM</h3><h3>mountain658's email: mountaingames658@zohomail.com</h3><p>Cool! I'll <a target="_blank" href="mailto:mountaingames658@zohomail.com?subject=hi">Send Them An Email</a></p></div>
 
 <br>
 
@@ -339,8 +339,6 @@ function startSearch() {
    
 <img src='https://www.free-website-hit-counter.com/c.php?d=9&id=131905&s=10' border='0' alt='' width="0px">
 <img src="//www.clustrmaps.com/map_v2.png?d=N4d3fSjmXm-Tu2ycA8C1o5NqGTG8jdd1ZdiF5jTxqKY&cl=ffffff" border='0' alt='' width="0px">
-<script src="https://cdn.jsdelivr.net/gh/mountain658/mountain658.github.io@main/main.js"></script>
-<script src="https://cdn.statically.io/gh/mountain658/mountain658.github.io/main/main.js"></script>	
 <script src='https://unpkg.com/intro.js/minified/intro.min.js'></script>
 <script src='jelly.js'></script>
 <script>
@@ -926,7 +924,13 @@ n : 'Tomb Of The Mask',
  },
   {
 n : 'This is the Only Level',
- },	
+ },
+  {
+n : 'Slope 2',
+ },
+  {
+n : 'Worlds Hardest Game 2',
+ },
 ];
 displayGames();
 startSite();
